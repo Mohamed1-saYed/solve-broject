@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration-line: none;
+    list-style-type: none;
+}
+
+nav{
+height: 12vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+position: relative;
+}
+
+nav > #menu{
+    display: none;
+}
+
+nav #menu-wrong{
+    display: none;
+}
+
+nav h1{
+    color: #007eff;
+    font-size: 35px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li a{
+    color: #007eff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (min-width: 200px) and (max-width: 300px){
+    nav{
+
+    }
+
+    nav:hover ul{
+        opacity: 1;
+        left: 0;
+    }
+
+    nav:hover > #menu-wrong{
+        display: block;
+        position: static;
+    }
+    
+    nav #menu{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav:hover #menu{
+        display: none;
+    }
+
+    nav #menu-wrong{
+        display: none;
+        font-size: 25px;
+        position: absolute;
+        left: 37px;
+    }
+
+
+    nav h1{
+        font-size: 25px;
+    }
+    
+
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        background-color: rgb(0 0 0 / 75%);
+        padding: 46px;
+        border-radius: 10px;
+        z-index: 11111;
+        opacity: 0;
+        left: -222222px;
+    }
+
+}
+
+
+
+@media (min-width: 301px) and (max-width: 500px){
+    nav ul li a{
+font-size: 20px;
+    }
+
+    nav:hover ul{
+        opacity: 1;
+        left: 0;
+    }
+
+    nav:hover > #menu-wrong{
+        display: block;
+        position: static;
+    }
+    
+    nav #menu{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav:hover #menu{
+        display: none;
+    }
+
+    nav #menu-wrong{
+        display: none;
+        font-size: 25px;
+        position: absolute;
+        left: 37px;
+    }
+
+
+    nav h1{
+        font-size: 25px;
+    }
+    
+
+    nav ul{
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        top: 90px;
+        background-color: rgb(0 0 0 / 75%);
+        padding: 95px;
+        border-radius: 10px;
+        z-index: 11111;
+        opacity: 0;
+        left: -222222px;
+    }
+
+}
